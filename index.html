@@ -51,19 +51,46 @@
       position: relative;
       bottom: 0;
       width: 100%;
-      font-size: 0.95rem;
+      font-size: 1.1rem; /* increased font size */
+      text-align: center; /* center align all text */
     }
     footer a {
-      color: #ffc107; /* golden accent */
+      color: #ffc107;
       text-decoration: none;
     }
     footer a:hover {
       text-decoration: underline;
     }
     .footer-icon {
-      font-size: 1.2rem;
+      font-size: 1.3rem; /* slightly bigger icons */
       margin-right: 8px;
       color: #ffc107;
+      vertical-align: middle;
+    }
+
+    /* WhatsApp Floating Button */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+    }
+    .whatsapp-button:hover {
+      background-color: #1ebe57;
+      text-decoration: none;
+    }
+    .whatsapp-icon {
+      color: white;
+      font-size: 30px;
     }
   </style>
 </head>
@@ -71,7 +98,7 @@
 
   <!-- Header with Centered Logo -->
   <header class="text-center py-4">
-    <img src="https://via.placeholder.com/130x65?text=LOGO" alt="Company Logo" class="logo mb-2">
+    <img src="https://via.placeholder.com/130x65?text=LOGO" alt="Company Logo" class="logo mb-2" />
     <h1 class="h4">Apostille Services – Trusted Across India</h1>
   </header>
 
@@ -81,7 +108,7 @@
       
       <!-- Left Image -->
       <div class="col-md-6 text-center mb-4 mb-md-0">
-        <img src="https://via.placeholder.com/400x300?text=Apostille+Image" alt="Apostille Process" class="img-fluid rounded">
+        <img src="https://via.placeholder.com/400x300?text=Apostille+Image" alt="Apostille Process" class="img-fluid rounded" />
       </div>
 
       <!-- Right Content -->
@@ -97,7 +124,7 @@
     <!-- Packages Section - Modern Cards -->
     <div class="row mt-5">
       <div class="col-12 text-center mb-5">
-        <h2 class="fw-bold">Choose Your Package</h2>
+        <h2 class="fw-bold">Find the Right Package for You</h2>
         <p class="text-muted">Fast and secure Apostille services tailored to your needs</p>
       </div>
 
@@ -138,25 +165,21 @@
   </div>
 
   <!-- Footer -->
-  <footer class="text-center text-md-start">
+  <footer>
     <div class="container">
-      <div class="row justify-content-center">
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <p><i class="bi bi-telephone-fill footer-icon"></i> <a href="tel:+918770100596">+91 8770100596</a></p>
-          <p><i class="bi bi-envelope-fill footer-icon"></i> <a href="mailto:docindore09@gmail.com">docindore09@gmail.com</a></p>
-        </div>
-
-        <div class="col-md-6">
-          <p><i class="bi bi-geo-alt-fill footer-icon"></i> 1057, Noorani Nagar, Dhar Road, Indore (M.P.) 452001</p>
-        </div>
-
-      </div>
-      <div class="text-center mt-3" style="font-size: 0.85rem; color: #cbd3e3;">
-        &copy; 2025 Apostille Services. All rights reserved.
-      </div>
+      <p><i class="bi bi-telephone-fill footer-icon"></i> <a href="tel:+918770100596">+91 8770100596</a></p>
+      <p><i class="bi bi-envelope-fill footer-icon"></i> <a href="mailto:docindore09@gmail.com">docindore09@gmail.com</a></p>
+      <p><i class="bi bi-geo-alt-fill footer-icon"></i> 1057, Noorani Nagar, Dhar Road, Indore (M.P.) 452001</p>
+      <p style="margin-top: 20px; font-size: 0.95rem; color: #cbd3e3;">&copy; 2025 Apostille Services. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/918770100596" target="_blank" rel="noopener" class="whatsapp-button" aria-label="Chat on WhatsApp">
+    <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M20.52 3.48a11.897 11.897 0 0 0-17.015 0 11.816 11.816 0 0 0-3.534 8.37c0 2.086.542 4.127 1.57 5.922L2 22l4.353-1.385a11.82 11.82 0 0 0 5.922 1.57c4.24 0 7.976-2.26 9.945-5.758a11.903 11.903 0 0 0-1.698-13.87Zm-8.39 14.184a8.15 8.15 0 0 1-4.398-1.284l-.314-.188-2.602.827.876-2.538-.204-.33a8.13 8.13 0 1 1 6.638 3.474Zm4.592-6.218c-.232-.116-1.37-.676-1.582-.753-.21-.078-.363-.116-.516.117-.153.232-.59.753-.724.906-.133.154-.266.173-.5.058-.232-.116- .977-.36-1.86-1.146-.688-.613-1.15-1.372-1.285-1.604-.134-.232-.014-.357.102-.473.105-.104.232-.273.348-.41.116-.137.154-.23.232-.384.077-.154.038-.288-.019-.404-.057-.115-.516-1.246-.707-1.708-.186-.448-.375-.388-.516-.395-.133-.007-.288-.008-.44-.008-.153 0-.4.058-.61.288-.21.232-.8.783-.8 1.906 0 1.123.82 2.21.935 2.364.116.154 1.61 2.45 3.897 3.435.545.235.97.375 1.303.48.547.172 1.04.148 1.433.09.436-.065 1.37-.56 1.563-1.103.193-.544.193-1.01.135-1.105-.056-.093-.205-.154-.438-.27Z"/>
+    </svg>
+  </a>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
