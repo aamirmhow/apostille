@@ -2,186 +2,253 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Apostille Services – Trusted & Fast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apostille Services in Indore</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-  <!-- Google Font -->
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-      margin-bottom: 100px; /* for footer spacing */
-    }
-    h1, h2 {
-      color: #004080;
-    }
-    .logo {
-      max-width: 130px;
-    }
-    .main-section {
-      background: white;
-      border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      margin-top: 30px;
-    }
-    .card {
-      border: none;
-      transition: transform 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    }
-    ul li {
-      margin-bottom: 8px;
-    }
-    footer {
-      background-color: #004080;
-      color: white;
-      padding: 30px 0;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-      font-size: 1.1rem; /* increased font size */
-      text-align: center; /* center align all text */
-    }
-    footer a {
-      color: #ffc107;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    .footer-icon {
-      font-size: 1.3rem; /* slightly bigger icons */
-      margin-right: 8px;
-      color: #ffc107;
-      vertical-align: middle;
+      background-color: #fffefc;
+      color: #333;
     }
 
-    /* WhatsApp Floating Button */
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      z-index: 1000;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background-color 0.3s ease;
+    .navbar-custom {
+      background-color: #ff6600;
     }
-    .whatsapp-button:hover {
-      background-color: #1ebe57;
-      text-decoration: none;
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #ffffff;
     }
-    .whatsapp-icon {
+
+    .navbar-custom .nav-link:hover {
+      color: #cce5ff;
+    }
+
+    .btn-custom-blue {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    .btn-custom-blue:hover {
+      background-color: #0056b3;
+    }
+
+    .hero-section {
+      background-image: url('https://source.unsplash.com/1600x900/?documents,office');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      height: 100vh;
       color: white;
-      font-size: 30px;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .service-box, .counter-box, .content-box {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 30px 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service-box:hover, .counter-box:hover, .content-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .service-icon {
+      width: 60px;
+      margin-bottom: 20px;
+    }
+
+    .counter-icon {
+      font-size: 40px;
+      color: #ff6600;
+      margin-bottom: 20px;
+    }
+
+    .counter-number {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .counter-title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .content-area {
+      padding: 80px 20px;
+      background: linear-gradient(to right, #fff7f0, #fff);
+    }
+
+    .section-title {
+      color: #ff6600;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    .highlight {
+      background: linear-gradient(transparent 60%, #ffecd9 60%);
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
-
-  <!-- Header with Centered Logo -->
-  <header class="text-center py-4">
-    <img src="https://via.placeholder.com/130x65?text=LOGO" alt="Company Logo" class="logo mb-2" />
-    <h1 class="h4">Apostille Services – Trusted Across India</h1>
-  </header>
-
-  <!-- Main Two-Column Section -->
-  <div class="container">
-    <div class="row main-section align-items-center">
-      
-      <!-- Left Image -->
-      <div class="col-md-6 text-center mb-4 mb-md-0">
-        <img src="https://via.placeholder.com/400x300?text=Apostille+Image" alt="Apostille Process" class="img-fluid rounded" />
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MyWebsite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button class="btn btn-custom-blue">Sign Up</button>
       </div>
-
-      <!-- Right Content -->
-      <div class="col-md-6">
-        <h2>What is Apostille?</h2>
-        <p style="text-align: justify;">
-          Apostille is a type of document authentication issued to documents for use in countries that participate in the Hague Convention of 1961. This certification simplifies the process of using official documents abroad such as birth certificates, marriage certificates, educational degrees, and commercial documents. Whether you're planning to study, work, get married, or move overseas, Apostille is a legal necessity. We ensure a smooth, fast, and error-free Apostille process for individuals and businesses across India. Trust our experienced team to handle your documents securely and professionally.
-        </p>
-      </div>
-
     </div>
+  </nav>
 
-    <!-- Packages Section - Modern Cards -->
-    <div class="row mt-5">
-      <div class="col-12 text-center mb-5">
-        <h2 class="fw-bold">Find the Right Package for You</h2>
-        <p class="text-muted">Fast and secure Apostille services tailored to your needs</p>
-      </div>
+  <!-- Hero Section -->
+  <section class="hero-section d-flex align-items-center justify-content-center text-center">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="display-4 fw-bold">Apostille Services in Indore</h1>
+      <p class="lead mt-3 mb-4">Fast, reliable, and government-authorized document apostille assistance.</p>
+      <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
+    </div>
+  </section>
 
-      <!-- Urgent Package Card -->
-      <div class="col-md-6 mb-4">
-        <div class="card shadow-lg h-100">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold text-danger">Urgent Package</h5>
-            <h6 class="display-6 text-dark mb-3">₹3500</h6>
-            <ul class="list-unstyled mb-4 text-start mx-auto" style="max-width: 280px;">
-              <li>✅ Processing Time: 2–3 Days</li>
-              <li>✅ Priority Handling</li>
-              <li>✅ Real-time Updates</li>
-              <li>✅ Dedicated Executive</li>
-            </ul>
-            <a href="tel:+918770100596" class="btn btn-danger w-100">Book Now</a>
-          </div>
+  <!-- Service Boxes -->
+  <div class="container py-5">
+    <div class="row text-center">
+      <div class="col-md-3 mb-4">
+        <div class="service-box">
+          <img src="https://cdn-icons-png.flaticon.com/512/2190/2190552.png" alt="Cost Effective" class="service-icon">
+          <h5 class="mt-3">Cost Effective</h5>
         </div>
       </div>
-
-      <!-- Normal Package Card -->
-      <div class="col-md-6 mb-4">
-        <div class="card shadow h-100">
-          <div class="card-body text-center">
-            <h5 class="card-title fw-bold text-success">Normal Package</h5>
-            <h6 class="display-6 text-dark mb-3">₹2000</h6>
-            <ul class="list-unstyled mb-4 text-start mx-auto" style="max-width: 280px;">
-              <li>✅ Processing Time: 7–10 Days</li>
-              <li>✅ MEA + Apostille Service</li>
-              <li>✅ Status Tracking</li>
-              <li>✅ Email Support</li>
-            </ul>
-            <a href="tel:+918770100596" class="btn btn-success w-100">Get Started</a>
-          </div>
+      <div class="col-md-3 mb-4">
+        <div class="service-box">
+          <img src="https://cdn-icons-png.flaticon.com/512/3523/3523063.png" alt="On Time" class="service-icon">
+          <h5 class="mt-3">On Time</h5>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="service-box">
+          <img src="https://cdn-icons-png.flaticon.com/512/2910/2910768.png" alt="Trustworthy" class="service-icon">
+          <h5 class="mt-3">Trustworthy</h5>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="service-box">
+          <img src="https://cdn-icons-png.flaticon.com/512/1907/1907551.png" alt="15 Years Experience" class="service-icon">
+          <h5 class="mt-3">15 Years Experience</h5>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p><i class="bi bi-telephone-fill footer-icon"></i> <a href="tel:+918770100596">+91 8770100596</a></p>
-      <p><i class="bi bi-envelope-fill footer-icon"></i> <a href="mailto:docindore09@gmail.com">docindore09@gmail.com</a></p>
-      <p><i class="bi bi-geo-alt-fill footer-icon"></i> 1057, Noorani Nagar, Dhar Road, Indore (M.P.) 452001</p>
-      <p style="margin-top: 20px; font-size: 0.95rem; color: #cbd3e3;">&copy; 2025 Apostille Services. All rights reserved.</p>
+  <!-- Why Choose Us -->
+  <div class="container content-area" data-aos="fade-up">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 class="section-title">Why Choose Us for <span class="highlight">Apostille Services in Indore</span>?</h2>
+        <p class="content-text">
+          With over <span class="highlight">15 years of experience</span>, we offer certified and government-authorized apostille services designed to be <span class="highlight">cost-effective</span>, <span class="highlight">on time</span>, and <span class="highlight">trustworthy</span>.
+        </p>
+      </div>
     </div>
-  </footer>
+  </div>
 
-  <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/918770100596" target="_blank" rel="noopener" class="whatsapp-button" aria-label="Chat on WhatsApp">
-    <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M20.52 3.48a11.897 11.897 0 0 0-17.015 0 11.816 11.816 0 0 0-3.534 8.37c0 2.086.542 4.127 1.57 5.922L2 22l4.353-1.385a11.82 11.82 0 0 0 5.922 1.57c4.24 0 7.976-2.26 9.945-5.758a11.903 11.903 0 0 0-1.698-13.87Zm-8.39 14.184a8.15 8.15 0 0 1-4.398-1.284l-.314-.188-2.602.827.876-2.538-.204-.33a8.13 8.13 0 1 1 6.638 3.474Zm4.592-6.218c-.232-.116-1.37-.676-1.582-.753-.21-.078-.363-.116-.516.117-.153.232-.59.753-.724.906-.133.154-.266.173-.5.058-.232-.116- .977-.36-1.86-1.146-.688-.613-1.15-1.372-1.285-1.604-.134-.232-.014-.357.102-.473.105-.104.232-.273.348-.41.116-.137.154-.23.232-.384.077-.154.038-.288-.019-.404-.057-.115-.516-1.246-.707-1.708-.186-.448-.375-.388-.516-.395-.133-.007-.288-.008-.44-.008-.153 0-.4.058-.61.288-.21.232-.8.783-.8 1.906 0 1.123.82 2.21.935 2.364.116.154 1.61 2.45 3.897 3.435.545.235.97.375 1.303.48.547.172 1.04.148 1.433.09.436-.065 1.37-.56 1.563-1.103.193-.544.193-1.01.135-1.105-.056-.093-.205-.154-.438-.27Z"/>
-    </svg>
-  </a>
+  <!-- Counters -->
+  <div class="container py-5">
+    <div class="row text-center">
+      <div class="col-md-3 mb-4">
+        <div class="counter-box">
+          <div class="counter-icon"><i class="fas fa-dollar-sign"></i></div>
+          <div class="counter-number" data-target="5000">0</div>
+          <div class="counter-title">Cost Effective</div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="counter-box">
+          <div class="counter-icon"><i class="fas fa-clock"></i></div>
+          <div class="counter-number" data-target="99">0</div>
+          <div class="counter-title">On Time Delivery (%)</div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="counter-box">
+          <div class="counter-icon"><i class="fas fa-thumbs-up"></i></div>
+          <div class="counter-number" data-target="1000">0</div>
+          <div class="counter-title">Trustworthy Clients</div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="counter-box">
+          <div class="counter-icon"><i class="fas fa-award"></i></div>
+          <div class="counter-number" data-target="15">0</div>
+          <div class="counter-title">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Bootstrap JS -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const counters = document.querySelectorAll('.counter-number');
+    const speed = 200;
+
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const increment = target / speed;
+
+        if(count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCount, 15);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+  </script>
 </body>
 </html>
