@@ -22,30 +22,6 @@
     }
 
       
-      .phone-icon {
-      background-color: #4579ED;
-      border: 2px solid white;
-      border-radius: 50%;
-      color: white;
-      padding: 8px;
-      font-size: 14px;
-      margin-right: 10px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 32px;
-      height: 32px;
-    }
-
-    .top-bar {
-      padding: 10px 0;
-    background-color: #4579ED;
-    }
-
-    .phone-text {
-      font-weight: 600;
-      color: #000;
-    }
       
     .hero-section {
       background-color: #F8FAFF;
@@ -169,46 +145,113 @@
     }
       
          .apostille-section {
-      max-width:950px;
-      margin: 60px auto;
-      padding: 20px;
+      max-width: 950px;
+      margin:auto;
+      margin-top:20px;
+       
     }
 
     .apostille-section h2 {
       font-weight: 600;
       margin-bottom: 20px;
+      text-align: center;
+        color:#4579ED;
     }
 
     .apostille-section p {
       font-size: 1rem;
       line-height: 1.7;
       color: #333;
+      padding-left:20px;
+      padding-right:20px;
+       font-weight: 300;
+        text-align: justify;
+         
+    }
+      
+      .document-section {
+       
+      margin: 60px auto;
+    }
+
+    .document-section h2 {
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: #4579ED;
+      text-align: center;
+    }
+
+    .document-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .document-list li {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      color: #333;
+    }
+
+    .document-list li i {
+      color: #25D366;
+      margin-right: 10px;
+      font-size: 1.1rem;
+    }
+
+    .document-image img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .document-section .row > div {
+        margin-bottom: 30px;
+      }
+    }
+       .service-icon {
+      background-color: #b30000;
+      color: white;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 24px;
+      margin: 0 auto 15px;
+    }
+
+    .service-box {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+      height: 100%;
+      transition: 0.3s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+      font-weight: 700;
+      color: #b30000;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
     }
   </style>
 </head>
 <body>
 
-<!-- Header Section -->
-<div class="container-fluid top-bar">
-<div class="container top-bar">
-  <div class="d-flex justify-content-between align-items-center">
-    
-    <!-- Left: Logo -->
-    <div class="logo" style="margin-left:20px;">
-      <img src="LOGO.PNG.png" alt="Logo" style="height:80px;" >
-    </div>
-    
-    <!-- Right: Phone -->
-    <div class="d-flex align-items-center">
-      <span class="phone-icon">
-        <i class="fas fa-phone"></i>
-      </span>
-      <span class="phone-text"  style="margin-right:20px;">+91 9826472886</span>
-    </div>
-    
-  </div>
-</div>
-</div>
+ 
+
 <!-- Hero Section -->
 <section class="hero-section">
   <div class="container hero-content">
@@ -255,11 +298,92 @@
 </section>
     
     <section class="apostille-section">
-  <h2 class="h2 text-center">What is an Apostille?</h2>
+  <h2 class="h2">What is an Apostille?</h2>
   <p>
-    An apostille is a certificate issued by a designated authority in a country that is a member of the Hague Convention. It authenticates the origin of a public document—such as a birth certificate, marriage certificate, educational degree, or legal affidavit—so it can be recognized internationally. Apostille services are essential for individuals who wish to use their documents abroad for purposes like visa applications, job opportunities, higher education, or immigration. Instead of going through long legalization processes at embassies, an apostille simplifies it by verifying the document for global acceptance. In India, the Ministry of External Affairs (MEA) is the primary authority responsible for issuing apostilles. Once your document is apostilled, it is legally valid in all countries that are part of the Hague Apostille Convention, without the need for further verification. This saves time, reduces stress, and ensures your paperwork meets international standards.
+    An apostille is an official certificate that verifies the authenticity of a public document for use in foreign countries. Issued under the Hague Convention of 1961, it removes the need for embassy attestation. In India, the Ministry of External Affairs (MEA) provides apostille services for documents like birth, marriage, education, or power of attorney. It confirms the seal and signature, making the document valid abroad for immigration, education, work, or legal use.
   </p>
 </section>
+ 
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center section-title mb-5">Fast & Trusted Apostille Services</h2>
 
+      <div class="row g-4 text-center">
+        <!-- Service 1 -->
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <h5 class="fw-bold">Apostille Services For 100+ Countries</h5>
+            <p class="text-muted">We do apostille on all type of documents for 100+ countries like UAE, Bangladesh, USA, Ireland, Cyprus, Spain, Finland etc.</p>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <h5 class="fw-bold">Document Apostille Only At Rs. 1299/-*</h5>
+            <p class="text-muted">Get your apostilled documents only at Rs.1299/-* This is the lowest price for apostille services in market.</p>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <h5 class="fw-bold">Fast Delivery in 3-4 Days*</h5>
+            <p class="text-muted">After submitting the documents we do apostille in 3-4 days* only. You can collect from our office or we can courier to you too.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+<!-- Document Section -->
+<section class="document-section container">
+  <h2>List Of Documents For Attestation & Apostille Services</h2>
+  <div class="row align-items-start">
+
+    <!-- Column 1: Image -->
+    <div class="col-md-4 document-image text-center">
+      <img src="img-list.jpg" class="img-fluid" alt="Documents Image">
+    </div>
+
+    <!-- Column 2: List 1 -->
+    <div class="col-md-4">
+      <ul class="document-list">
+        <li><i class="fas fa-check-circle"></i> Birth Certificate</li>
+        <li><i class="fas fa-check-circle"></i> Marriage Certificate</li>
+        <li><i class="fas fa-check-circle"></i> Degree Certificate</li>
+        <li><i class="fas fa-check-circle"></i> Power of Attorney</li>
+        <li><i class="fas fa-check-circle"></i> Affidavit & Declarations</li>
+        <li><i class="fas fa-check-circle"></i> Police Clearance Certificate</li>
+        <li><i class="fas fa-check-circle"></i> Commercial Documents</li>
+      </ul>
+    </div>
+
+    <!-- Column 3: List 2 -->
+    <div class="col-md-4">
+      <ul class="document-list">
+        <li><i class="fas fa-check-circle"></i> National ID Cards</li>
+        <li><i class="fas fa-check-circle"></i> Bonafide Certificate</li>
+        <li><i class="fas fa-check-circle"></i> Unmarried Certificates</li>
+        <li><i class="fas fa-check-circle"></i> Power of Attorney</li>
+        <li><i class="fas fa-check-circle"></i> Passport Copy</li>
+        <li><i class="fas fa-check-circle"></i> Mark Sheets</li>
+        <li><i class="fas fa-check-circle"></i> School Transfer Certificate</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+    
+    
 </body>
 </html>
