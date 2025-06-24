@@ -21,6 +21,32 @@
       padding: 0;
     }
 
+      
+      .phone-icon {
+      background-color: #4579ED;
+      border: 2px solid white;
+      border-radius: 50%;
+      color: white;
+      padding: 8px;
+      font-size: 14px;
+      margin-right: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+    }
+
+    .top-bar {
+      padding: 10px 0;
+    background-color: #4579ED;
+    }
+
+    .phone-text {
+      font-weight: 600;
+      color: #000;
+    }
+      
     .hero-section {
       background-color: #F8FAFF;
        
@@ -162,14 +188,35 @@
 </head>
 <body>
 
+<!-- Header Section -->
+<div class="container-fluid top-bar">
+<div class="container top-bar">
+  <div class="d-flex justify-content-between align-items-center">
+    
+    <!-- Left: Logo -->
+    <div class="logo" style="margin-left:50px;">
+      <img src="LOGO.PNG.png" alt="Logo" style="height:80px;" >
+    </div>
+    
+    <!-- Right: Phone -->
+    <div class="d-flex align-items-center">
+      <span class="phone-icon">
+        <i class="fas fa-phone"></i>
+      </span>
+      <span class="phone-text"  style="margin-right:40px;">+91 9826472886</span>
+    </div>
+    
+  </div>
+</div>
+</div>
 <!-- Hero Section -->
 <section class="hero-section">
   <div class="container hero-content">
-    <div class="row align-items-center" style="padding-bottom:90px;">
+    <div class="row align-items-center" >
       
       <!-- Left Column -->
       <div class="col-md-6 mb-4 mb-md-0">
-        <h1 class="display-4 fw-bold"  style="margin-top:90px;">
+        <h1 class="display-4 fw-bold">
           <span>Document Apostille?</span><br />
           <span>Only 3 Days</span>
         </h1>
@@ -200,7 +247,7 @@
 
       <!-- Right Column (Image) -->
       <div class="col-md-6 hero-img text-center">
-        <img src="apostille-g.png" class="mt-5 img-fluid" alt="Apostille Service">
+        <img src="apostille-g.png" class="img-fluid" alt="Apostille Service">
       </div>
 
     </div>
