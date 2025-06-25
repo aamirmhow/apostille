@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> 
 
   <style>
     body, html {
@@ -132,7 +133,7 @@
 
     @media (max-width: 768px) {
       .display-4 {
-        font-size: 2rem;
+        font-size:5rem;
       }
       .hero-section {
         height: auto;
@@ -211,7 +212,7 @@
       }
     }
        .service-icon {
-      background-color: #b30000;
+      background-color:#4579ED;
       color: white;
       width: 60px;
       height: 60px;
@@ -239,12 +240,79 @@
 
     .section-title {
       font-weight: 700;
-      color: #b30000;
+      color: #4579ED;
     }
 
     body {
       font-family: 'Poppins', sans-serif;
       background-color: #f8f9fa;
+    }
+       .step-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      height: 100%;
+      transition: 0.3s;
+      background-color: #fff;
+    }
+    .step-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .step-icon {
+      font-size: 48px;
+      color: #4a4a4a;
+      margin-bottom: 15px;
+    }
+    .btn-call {
+      background-color: #0056d2;
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: none;
+    }
+    .btn-call:hover {
+      background-color: #0041a8;
+    }
+      .bg-full{
+          background-color:#0041a8;
+      }
+      .swiper {
+      width: 100%;
+      max-width:800px;
+      margin: auto;
+    }
+    .swiper-slide {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .review-user {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .user-icon {
+      width: 40px;
+      height: 40px;
+      background-color: purple;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      font-weight: bold;
+    }
+    .review-stars {
+      color: #FFD700;
+      margin-top: 10px;
+    }
+    .swiper-pagination-bullet {
+      background: #888;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background: #000;
     }
   </style>
 </head>
@@ -259,7 +327,7 @@
       
       <!-- Left Column -->
       <div class="col-md-6 mb-4 mb-md-0">
-        <h1 class="display-4 fw-bold">
+        <h1 class="display-5 fw-bold">
           <span>Document Apostille?</span><br />
           <span>Only 3 Days</span>
         </h1>
@@ -306,7 +374,7 @@
  
   <section class="py-5">
     <div class="container">
-      <h2 class="text-center section-title mb-5">Fast & Trusted Apostille Services</h2>
+      <h2 class="text-center section-title mb-5">Quick and Trusted Apostille Service</h2>
 
       <div class="row g-4 text-center">
         <!-- Service 1 -->
@@ -326,8 +394,8 @@
             <div class="service-icon">
               <i class="fas fa-file-alt"></i>
             </div>
-            <h5 class="fw-bold">Document Apostille Only At Rs. 1299/-*</h5>
-            <p class="text-muted">Get your apostilled documents only at Rs.1299/-* This is the lowest price for apostille services in market.</p>
+            <h5 class="fw-bold">Document Apostille Only At Rs. 1500/-*</h5>
+            <p class="text-muted">Get your apostilled documents only at Rs.1500/-* This is the lowest price for apostille services in market.</p>
           </div>
         </div>
 
@@ -385,5 +453,205 @@
 </section>
     
     
+
+    <div class="container-fluid mt-5 bg-full">
+    
+    <div class="container py-5">
+    <h3 class="text-center fw-bold mb-4" style="color:#ffff;">ALL DONE WITH 3 EASY STEPS</h3>
+    <hr class="mx-auto mb-5" style="width: 120px; height: 2px; background-color: #333; opacity: 1;">
+
+    <div class="row g-4">
+      <!-- Step 1 -->
+      <div class="col-md-4">
+        <div class="step-card text-center h-100">
+          <div class="step-icon">
+           <img class="img-fluid" src="notary.png" width="150px;">
+          </div>
+          <h5 class="fw-bold mb-2">Notary Attestation</h5>
+          <p class="text-muted">
+            Your document is first verified and stamped by a registered notary to confirm its authenticity.
+
+
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="col-md-4">
+        <div class="step-card text-center h-100">
+          <div class="step-icon">
+           <img class="img-fluid" src="goverment.png" width="150px;">
+          </div>
+          <h5 class="fw-bold mb-2">SDM Attestation</h5>
+          <p class="text-muted">
+Next, the Sub-Divisional Magistrate (SDM) attests the notary-verified document. This is a mandatory step before apostille.          </p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="col-md-4">
+        <div class="step-card text-center h-100">
+          <div class="step-icon">
+            <img class="img-fluid" src="apostilleicon.png" width="150px;">
+          </div>
+          <h5 class="fw-bold mb-2">Apostille from MEA</h5>
+          <p class="text-muted">
+            Finally, the Ministry of External Affairs (MEA) issues the Apostille sticker, making your document valid for use in Hague Convention countries.
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+    
+    </div>
+    <section class="container mt-5">
+  <div class="row justify-content-center text-center">
+    <div class="col-md-8">
+      <h2 class="mb-4 fw-bold">Now You Can Relax – We’ll Handle Everything!</h2>
+      <p class="fs-5 text-muted">
+        No more long queues, confusing paperwork, or follow-ups. From Notary to SDM to Apostille – we manage the entire process for you with care and professionalism.
+        <br><br>
+        Just hand over your documents and sit back. We ensure timely, secure, and hassle-free service — so you don’t have to worry about a thing.
+      </p>
+      <div class="mt-4">
+        <a href="https://wa.me/919826472886" class="btn btn-success btn-lg">
+            <i class="fab fa-whatsapp"></i> Get Started on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+    <div class="container py-4 text-center">
+    <h3 class="fw-bold">EXCELLENT</h3>
+    <div class="text-warning fs-4 mb-2">★★★★★</div>
+    <p>Based on <strong>16 reviews</strong></p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" width="100" alt="Google Logo">
+  </div>
+
+  <div class="container mb-5">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Review Slide 1 -->
+        <div class="swiper-slide">
+          <div class="d-flex justify-content-between align-items-start">
+            <div class="review-user">
+              <div class="user-icon">M</div>
+              <div>
+                <strong>Mudsar</strong><br>
+                <small>2025-04-08</small>
+              </div>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" width="20">
+          </div>
+          <div class="review-stars">★★★★★ ✅</div>
+          <p class="mt-2">Good Google ads service for lead generation business.</p>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="d-flex justify-content-between align-items-start">
+            <div class="review-user">
+              <div class="user-icon">A</div>
+              <div>
+                <strong>Aliya</strong><br>
+                <small>2025-04-05</small>
+              </div>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" width="20">
+          </div>
+          <div class="review-stars">★★★★★ ✅</div>
+          <p class="mt-2">Excellent results with low CPC. Highly recommended!</p>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="d-flex justify-content-between align-items-start">
+            <div class="review-user">
+              <div class="user-icon">Z</div>
+              <div>
+                <strong>Zara</strong><br>
+                <small>2025-04-01</small>
+              </div>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" width="20">
+          </div>
+          <div class="review-stars">★★★★★ ✅</div>
+          <p class="mt-2">Very helpful team. Got more leads than expected.</p>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="d-flex justify-content-between align-items-start">
+            <div class="review-user">
+              <div class="user-icon">S</div>
+              <div>
+                <strong>Sameer</strong><br>
+                <small>2025-03-28</small>
+              </div>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" width="20">
+          </div>
+          <div class="review-stars">★★★★★ ✅</div>
+          <p class="mt-2">Google Ads campaign was perfect. Got 10x ROI!</p>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide">
+          <div class="d-flex justify-content-between align-items-start">
+            <div class="review-user">
+              <div class="user-icon">R</div>
+              <div>
+                <strong>Rohit</strong><br>
+                <small>2025-03-25</small>
+              </div>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" width="20">
+          </div>
+          <div class="review-stars">★★★★★ ✅</div>
+          <p class="mt-2">Affordable service and great results. Thank you!</p>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="swiper-slide">
+          <div class="d-flex justify-content-between align-items-start">
+            <div class="review-user">
+              <div class="user-icon">H</div>
+              <div>
+                <strong>Hina</strong><br>
+                <small>2025-03-20</small>
+              </div>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" width="20">
+          </div>
+          <div class="review-stars">★★★★★ ✅</div>
+          <p class="mt-2">Very professional Google Ads team. Quick response!</p>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination mt-5"></div>
+    </div>
+  </div>
+    <!-- Swiper + Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }
+    });
+  </script>
 </body>
 </html>
