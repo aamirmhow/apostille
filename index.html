@@ -6,7 +6,7 @@
   <title>Apostille Hero Section</title>
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <!-- Google Font - Poppins -->
@@ -14,16 +14,14 @@
     <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> 
-
+ 
   <style>
     body, html {
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
     }
-
-      
-      
+            
     .hero-section {
       background-color: #F8FAFF;
        
@@ -355,10 +353,58 @@
       color: #333;
       font-size: 15px;
     }
+      .top-bar {
+      background-color:#4579ED; /* Blue background */
+      color: white;
+      padding: 8px 0;
+    }
+    .logo-box {
+      border: 2px solid white;
+      padding: 4px 12px;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .phone-icon {
+      margin-right: 8px;
+    }
+    @media (max-width: 576px) {
+      .top-bar .d-flex {
+        flex-direction: column;
+        align-items: center;
+          
+      }
+    }
+      .service-card {
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(69, 121, 237, 0.2);
+    }
+
+    .service-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
   </style>
+    
+    
 </head>
 <body>
-
+<div class="container-fluid top-bar">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="logo-box text-white">LEGAL</div>
+        <div class="text-white fw-bold" style="margin-top:10px;">
+          <i class="bi bi-telephone-outbound"></i>
+ +91 9826472886
+        </div>
+      </div>
+    </div>
+  </div>
  
 
 <!-- Hero Section -->
@@ -679,6 +725,62 @@ Next, the Sub-Divisional Magistrate (SDM) attests the notary-verified document. 
     </div>
   </div>
     
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center text-primary fw-bold mb-4">Our Services & Assistances</h2>
+    <div class="row g-4 text-center">
+
+      <!-- MEA Attestation & Apostille -->
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow rounded service-card h-100">
+          <i class="bi bi-patch-check-fill service-icon"></i>
+          <h5 class="fw-semibold">MEA Attestation & Apostille</h5>
+        </div>
+      </div>
+
+      <!-- Embassy Attestation -->
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow rounded service-card h-100">
+          <i class="bi bi-building service-icon"></i>
+          <h5 class="fw-semibold">Embassy Attestation</h5>
+        </div>
+      </div>
+
+      <!-- HRD Attestation -->
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow rounded service-card h-100">
+          <i class="bi bi-person-badge-fill service-icon"></i>
+          <h5 class="fw-semibold">HRD Attestation</h5>
+        </div>
+      </div>
+
+      <!-- Translation -->
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow rounded service-card h-100">
+          <i class="bi bi-translate service-icon"></i>
+          <h5 class="fw-semibold">Translation</h5>
+        </div>
+      </div>
+
+      <!-- Visa Assistance -->
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow rounded service-card h-100">
+          <i class="bi bi-airplane-engines service-icon"></i>
+          <h5 class="fw-semibold">Visa Assistance</h5>
+        </div>
+      </div>
+
+      <!-- Flight Ticket -->
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow rounded service-card h-100">
+          <i class="bi bi-ticket-perforated service-icon"></i>
+          <h5 class="fw-semibold">Flight Ticket</h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 <div class="container py-5">
   <h2 class="text-center mb-4">Frequently Asked Questions</h2>
   <div class="accordion" id="faqAccordion">
