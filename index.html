@@ -1,1053 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Apostille Hero Section</title>
-
-  <!-- Bootstrap CSS -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <!-- Google Font - Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> 
- 
-  <style>
-    body, html {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-            
-    .hero-section {
-      background-color: #F8FAFF;
-       
-      height:auto;
-      display: flex;
-      align-items: center;
-      position: relative;
-    }
-
-    .hero-content {
-      animation: slideUp 1s ease-out;
-    }
-
-    @keyframes slideUp {
-      from {
-        transform: translateY(100px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
-    
-
-    .features {
-      text-align: left;
-      margin-top: 20px;
-      padding-left: 0;
-    }
-
-    .features li {
-      list-style: none;
-      font-weight: 600;
-      margin-bottom: 12px;
-      display: flex;
-      align-items: center;
-      font-size: 1.1rem;
-    }
-
-    .features li i {
-      color:#4579ED;;
-      margin-right: 10px;
-      font-size: 1.3rem;
-    }
-
-     .custom-btn {
-      font-size: 18px;
-      font-weight: 600;
-      padding: 12px 28px;
-      border-radius:4px;
-      transition: all 0.3s ease-in-out;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-    }
-
-    .btn-call {
-      background-color:#4579ED;
-      color: #fff;
-    }
-
-    .btn-call:hover {
-      background-color: #ffff;
-      transform: translateY(-3px);
-      color:#4579ED;
-      border:1px solid #4579ED;
-    }
-
-    .btn-whatsapp {
-      background-color: #25D366;
-      color: #fff;
-    }
-
-    .btn-whatsapp:hover {
-      background-color: #1ebe5b;
-      transform: translateY(-3px);
-      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-    }
-
-    .button-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap:20px;
-      justify-content: left;
-      margin-top: 30px;
-    }
-
-    .hero-img img {
-      max-width: 100%;
-      height: auto;
-      animation: fadeIn 1.5s ease;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: scale(0.95);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-    @media (max-width: 768px) {
-      .display-4 {
-        font-size:5rem;
-      }
-      .hero-section {
-        height: auto;
-        padding: 40px 0;
-        text-align: center;
-      }
-      .features {
-        text-align: center;
-      }
-    }
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Apostille Hero Section</title>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Bootstrap Icons -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+      <!-- Google Font - Poppins -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+      <!-- Font Awesome Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="custom.css" />
       
-         .apostille-section {
-      max-width: 950px;
-      margin:auto;
-      margin-top:20px;
+   </head>
+   <body>
+      <div class="container-fluid top-bar">
+         <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+               <div class="logo-box text-white">LEGAL</div>
+               <div class="text-white fw-bold" style="margin-top:10px;">
+                  <i class="bi bi-telephone-outbound"></i>
+                  +91 9826472886
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Hero Section -->
+      <section class="hero-section">
+         <div class="container hero-content">
+            <div class="row align-items-center" >
+               <!-- Left Column -->
+               <div class="col-md-6 mb-4 mb-md-0">
+                  <h1 class="display-5 fw-bold">
+                     <span>Document Apostille? </span><br />
+                     <span>We Deliver in 3 Days!</span>
+                  </h1>
+                  <ul class="features mt-4">
+                     <li> <li><i class="fas fa-check-circle"></i>Instant Document Support</li>
+                     <li> <li><i class="fas fa-check-circle"></i>On Time Delivery</li>
+                     <li> <li><i class="fas fa-check-circle"></i>Affordable Pricing</li>
+                     <li> <li><i class="fas fa-check-circle"></i>24x7 Chat Available</li>
+                  </ul>
+                  <div class="container text-center">
+                     <div class="button-group">
+                        <!-- Call Now Button -->
+                        <a href="tel:+919826472886" class="custom-btn btn-call">
+                        <i class="fas fa-phone"></i> Call Now
+                        </a>
+                        <!-- WhatsApp Button -->
+                        <a href="https://wa.me/919826472886" target="_blank" class="custom-btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Right Column (Image) -->
+               <div class="col-md-6 hero-img text-center">
+                  <img src="apostille-g.png" class="img-fluid" alt="Apostille Service">
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="apostille-section">
+         <h2 class="h2 p-4">Apostille Services You Can Trust !</h2>
+         <p>
+            Whether you're planning to study, work, or settle abroad — your documents need to be apostilled. That's where we come in. 
+            We handle the entire process for you — from <strong>Notary to SDM to MEA Apostille</strong> — so you don't have to worry about a thing. 
+            It’s fast, reliable, and completely hassle-free. Just hand over your documents, and let us do the rest.
+         </p>
+      </section>
+      <section class="py-5">
+         <div class="container">
+            <h2 class="text-center section-title mb-5">Quick and Trusted Apostille Service</h2>
+            <div class="row g-4 text-center">
+               <!-- Service 1 -->
+               <div class="col-md-4">
+                  <div class="service-box">
+                     <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                     </div>
+                     <h5 class="fw-bold">Apostille Services For 100+ Countries</h5>
+                     <p class="text-muted">We do apostille on all type of documents for 100+ countries like UAE, Bangladesh, USA, Ireland, Cyprus, Spain, Finland etc.</p>
+                  </div>
+               </div>
+               <!-- Service 2 -->
+               <div class="col-md-4">
+                  <div class="service-box">
+                     <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                     </div>
+                     <h5 class="fw-bold">Document Apostille Only At Rs. 1500/-*</h5>
+                     <p class="text-muted">Get your apostilled documents only at Rs.1500/-* This is the lowest price for apostille services in market.</p>
+                  </div>
+               </div>
+               <!-- Service 3 -->
+               <div class="col-md-4">
+                  <div class="service-box">
+                     <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                     </div>
+                     <h5 class="fw-bold">Fast Delivery in 3-4 Days*</h5>
+                     <p class="text-muted">After submitting the documents we do apostille in 3-4 days* only. You can collect from our office or we can courier to you too.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Document Section -->
+      <section class="document-section container">
+         <h2 class="p-5">List Of Documents For Attestation & Apostille Services</h2>
+         <div class="row align-items-start">
+            <!-- Column 1: Image -->
+            <div class="col-md-4 document-image text-center">
+               <img src="img-list.jpg" class="img-fluid" alt="Documents Image">
+            </div>
+            <!-- Column 2: List 1 -->
+            <div class="col-md-4">
+               <ul class="document-list">
+                  <li><i class="fas fa-check-circle"></i> Birth Certificate</li>
+                  <li><i class="fas fa-check-circle"></i> Marriage Certificate</li>
+                  <li><i class="fas fa-check-circle"></i> Degree Certificate</li>
+                  <li><i class="fas fa-check-circle"></i> Power of Attorney</li>
+                  <li><i class="fas fa-check-circle"></i> Affidavit & Declarations</li>
+                  <li><i class="fas fa-check-circle"></i> Police Clearance Certificate</li>
+                  <li><i class="fas fa-check-circle"></i> Commercial Documents</li>
+               </ul>
+            </div>
+            <!-- Column 3: List 2 -->
+            <div class="col-md-4">
+               <ul class="document-list">
+                  <li><i class="fas fa-check-circle"></i> National ID Cards</li>
+                  <li><i class="fas fa-check-circle"></i> Bonafide Certificate</li>
+                  <li><i class="fas fa-check-circle"></i> Unmarried Certificates</li>
+                  <li><i class="fas fa-check-circle"></i> Power of Attorney</li>
+                  <li><i class="fas fa-check-circle"></i> Passport Copy</li>
+                  <li><i class="fas fa-check-circle"></i> Mark Sheets</li>
+                  <li><i class="fas fa-check-circle"></i> School Transfer Certificate</li>
+               </ul>
+            </div>
+         </div>
+      </section>
+    
+      <div class="container-fluid mt-5 bg-full">
+         <div class="container py-5">
+            <h3 class="text-center fw-bold mb-4" style="color:#ffff;">ALL DONE WITH 3 EASY STEPS</h3>
+            <hr class="mx-auto mb-5" style="width: 120px; height: 2px; background-color: #333; opacity: 1;">
+            <div class="row g-4">
+               <!-- Step 1 -->
+               <div class="col-md-4">
+                  <div class="step-card text-center h-100">
+                     <div class="step-icon">
+                        <img class="img-fluid" src="notary.png" width="150px;">
+                     </div>
+                     <h5 class="fw-bold mb-2">1 Step Notary Attestation</h5>
+                     <p class="text-muted">
+                        Your document is first verified and stamped by a registered notary to confirm its authenticity.
+                     </p>
+                  </div>
+               </div>
+               <!-- Step 2 -->
+               <div class="col-md-4">
+                  <div class="step-card text-center h-100">
+                     <div class="step-icon">
+                        <img class="img-fluid" src="goverment.png" width="150px;">
+                     </div>
+                     <h5 class="fw-bold mb-2">2 Step SDM Attestation</h5>
+                     <p class="text-muted">
+                        Next, the Sub-Divisional Magistrate (SDM) attests the notary-verified document. This is a mandatory step before apostille.          
+                     </p>
+                  </div>
+               </div>
+               <!-- Step 3 -->
+               <div class="col-md-4">
+                  <div class="step-card text-center h-100">
+                     <div class="step-icon">
+                        <img class="img-fluid" src="apostilleicon.png" width="150px;">
+                     </div>
+                     <h5 class="fw-bold mb-2">3 Step Apostille from MEA</h5>
+                     <p class="text-muted">
+                        Finally, the Ministry of External Affairs (MEA) issues the Apostille sticker, making your document valid for use in Hague Convention countries.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section class="container mt-5">
+         <div class="row justify-content-center text-center">
+            <div class="col-md-8">
+               <h2 class="mb-4 fw-bold">Now You Can Relax – We’ll Handle Everything!</h2>
+               <p class="fs-5 text-muted">
+                  No more long queues, confusing paperwork, or follow-ups. From Notary to SDM to Apostille – we manage the entire process for you with care and professionalism.
+                  <br><br>
+                  Just hand over your documents and sit back. We ensure timely, secure, and hassle-free service — so you don’t have to worry about a thing.
+               </p>
+               <div class="mt-4">
+                  <a href="https://wa.me/919826472886" class="btn btn-success btn-lg">
+                  <i class="fab fa-whatsapp"></i> Get Started on WhatsApp
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="container mt-5 py-4 text-center">
+         <h2 class="fw-bold">EXCELLENT</h2>
+         <div class="text-warning fs-4 mb-2 fs-5">★★★★★</div>
+         <p>Based on <strong>16 reviews</strong></p>
+         <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" width="200" alt="Google Logo">
+      </div>
+      <div class="container mb-5">
+         <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+               <!-- Review Slide 1 -->
+               <div class="swiper-slide">
+                  <div class="d-flex justify-content-between align-items-start">
+                     <div class="review-user">
+                        <div class="user-icon">P</div>
+                        <div>
+                           <strong>Priyal Farkya</strong><br>
+                           <small>9 week ago</small>
+                        </div>
+                     </div>
+                  
+                  </div>
+                  <div class="review-stars fs-5">★★★★★</div>
+                  <p class="mt-2">The services they offer is very good and comfortable.. they are so good at there work… i recommend other for consulting them for easy attestation process.
+</p>
+               </div>
+               <!-- Slide 2 -->
+               <div class="swiper-slide">
+                  <div class="d-flex justify-content-between align-items-start">
+                     <div class="review-user">
+                        <div class="user-icon">S</div>
+                        <div>
+                           <strong>Swapnil Kakrani</strong><br>
+                           <small>2024-06-19</small>
+                        </div>
+                     </div>
+                   </div>
+                  <div class="review-stars fs-5">★★★★★</div>
+                  <p class="mt-2">I recently used apostille services for my PCC and birth certificate through Aamir Qureshi in Indore. The process was smooth and hassle-free. Aamir Qureshi provided excellent assistance and ensured everything was done efficiently. I highly recommend their services for anyone needing apostille services in Indore.</p>
+               </div>
+               <!-- Slide 3 -->
+               <div class="swiper-slide">
+                  <div class="d-flex justify-content-between align-items-start">
+                     <div class="review-user">
+                        <div class="user-icon">T</div>
+                        <div>
+                           <strong>Taher Ali</strong><br>
+                           <small>2024-07-18</small>
+                        </div>
+                     </div>
+                    
+                  </div>
+                  <div class="review-stars fs-5">★★★★★</div>
+                  <p class="mt-2">Aamir Qureshi provides excellent Marriage Certificate Attestation services in Indore. His team ensures swift processing and keeps clients updated. Their courteous and knowledgeable staff make the entire process hassle-free and efficient. Highly recommended for anyone seeking attestation services in Indore.</p>
+               </div>
+               <!-- Slide 4 -->
+               <div class="swiper-slide">
+                  <div class="d-flex justify-content-between align-items-start">
+                     <div class="review-user">
+                        <div class="user-icon">K</div>
+                        <div>
+                           <strong>Krishna Yadav</strong><br>
+                           <small>2025-06-02</small>
+                        </div>
+                     </div>
+                     
+                  </div>
+                  <div class="review-stars fs-5">★★★★★</div>
+                  <p class="mt-2">Really good service. I needed my degree attested as early as possible for dubai and they got me just on time.. whereas none other attestation service people on google were ready too as it was eid in few days coming and embassy will be closed. Thank you bhaiya for all the help. Really appreciate it.</p>
+               </div>
+               <!-- Slide 5 -->
+               <div class="swiper-slide">
+                  <div class="d-flex justify-content-between align-items-start">
+                     <div class="review-user">
+                        <div class="user-icon">A</div>
+                        <div>
+                           <strong>Asiya Shaikh</strong><br>
+                           <small>2024-09-20</small>
+                        </div>
+                     </div>
+               
+                  </div>
+                  <div class="review-stars fs-5">★★★★★</div>
+                  <p class="mt-2">I got my documents apostille within a week. They work efficiently and most important keep you updated about status of your application. Also the charges are very reasonable and they deliver your documents at your doorstep.</p>
+               </div>
+               <!-- Slide 6 -->
+               <div class="swiper-slide">
+                  <div class="d-flex justify-content-between align-items-start">
+                     <div class="review-user">
+                        <div class="user-icon">H</div>
+                        <div>
+                           <strong>Sonal Burde</strong><br>
+                           <small>2025-08-26</small>
+                        </div>
+                     </div>
+                    
+                  </div>
+                  <div class="review-stars fs-5">★★★★★</div>
+                  <p class="mt-2">Experience with MEA apostille is very good. Amir sir is very polite and helpful. I received documents with proper apostille and on time. Thankyou and looking for more help in future.</p>
+               </div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination" style="margin-top:50px;"></div>
+         </div>
+      </div>
+      <section class="py-5 bg-light">
+         <div class="container">
+            <h2 class="text-center text-primary fw-bold mb-4">Our Services & Assistances</h2>
+            <div class="row g-4 text-center">
+               <!-- MEA Attestation & Apostille -->
+               <div class="col-md-4">
+                  <div class="p-4 bg-white shadow rounded service-card h-100">
+                     <i class="bi bi-patch-check-fill service-icon"></i>
+                     <h5 class="fw-semibold">MEA Attestation & Apostille</h5>
+                  </div>
+               </div>
+               <!-- Embassy Attestation -->
+               <div class="col-md-4">
+                  <div class="p-4 bg-white shadow rounded service-card h-100">
+                     <i class="bi bi-building service-icon"></i>
+                     <h5 class="fw-semibold">Embassy Attestation</h5>
+                  </div>
+               </div>
+               <!-- HRD Attestation -->
+               <div class="col-md-4">
+                  <div class="p-4 bg-white shadow rounded service-card h-100">
+                     <i class="bi bi-person-badge-fill service-icon"></i>
+                     <h5 class="fw-semibold">HRD Attestation</h5>
+                  </div>
+               </div>
+               <!-- Translation -->
+               <div class="col-md-4">
+                  <div class="p-4 bg-white shadow rounded service-card h-100">
+                     <i class="bi bi-translate service-icon"></i>
+                     <h5 class="fw-semibold">Translation</h5>
+                  </div>
+               </div>
+               <!-- Visa Assistance -->
+               <div class="col-md-4">
+                  <div class="p-4 bg-white shadow rounded service-card h-100">
+                     <i class="bi bi-airplane-engines service-icon"></i>
+                     <h5 class="fw-semibold">Visa Assistance</h5>
+                  </div>
+               </div>
+               <!-- Flight Ticket -->
+               <div class="col-md-4">
+                  <div class="p-4 bg-white shadow rounded service-card h-100">
+                     <i class="bi bi-ticket-perforated service-icon"></i>
+                     <h5 class="fw-semibold">Flight Ticket</h5>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="container py-5">
+         <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+         <div class="accordion" id="faqAccordion">
+            <!-- Q0 -->
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="q2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="a2">
+                  What is an Apostille?
+                  </button>
+               </h2>
+               <div id="a2" class="accordion-collapse collapse" aria-labelledby="q2" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                     An apostille is an official certificate that verifies the authenticity of a public document for use in foreign countries. Issued under the Hague Convention of 1961, it removes the need for embassy attestation. In India, the Ministry of External Affairs (MEA) provides apostille services for documents like birth, marriage, education, or power of attorney. It confirms the seal and signature, making the document valid abroad for immigration, education, work, or legal use.
+                  </div>
+               </div>
+            </div>
+            <!-- Q2 -->
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="q3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="a3">
+                  Which documents can be apostilled?
+                  </button>
+               </h2>
+               <div id="a3" class="accordion-collapse collapse" aria-labelledby="q3" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                     Educational certificates, birth & marriage certificates, power of attorney, police clearance, and more can be apostilled.
+                  </div>
+               </div>
+            </div>
+            <!-- Q3 -->
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="q4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="a4">
+                  Is notary and SDM attestation required before apostille?
+                  </button>
+               </h2>
+               <div id="a4" class="accordion-collapse collapse" aria-labelledby="q4" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                     Yes, your document is first notarized and then attested by SDM before it is submitted for apostille.
+                  </div>
+               </div>
+            </div>
+            <!-- Q4 -->
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="q5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="a5">
+                  Do you offer document pickup and delivery?
+                  </button>
+               </h2>
+               <div id="a5" class="accordion-collapse collapse" aria-labelledby="q5" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                     Yes, we offer safe document pickup and doorstep delivery through trusted courier partners like Blue Dart and DTDC.
+                  </div>
+               </div>
+            </div>
+            <!-- Q5 -->
+            <div class="accordion-item">
+               <h2 class="accordion-header" id="q6">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="a6">
+                  Is apostille accepted in all countries?
+                  </button>
+               </h2>
+               <div id="a6" class="accordion-collapse collapse" aria-labelledby="q6" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                     Apostille is valid only in countries that are members of the Hague Convention. For other countries, embassy attestation is required.
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
        
-    }
-
-    .apostille-section h2 {
-      font-weight: 600;
-      margin-bottom: 20px;
-      text-align: center;
-        color:#4579ED;
-    }
-
-    .apostille-section p {
-      font-size: 1rem;
-      line-height: 1.7;
-      color: #333;
-      padding-left:20px;
-      padding-right:20px;
-       font-weight: 300;
-        text-align: justify;
+       <a href="https://wa.me/9826472886" class="whatsapp-button-c"><i class="bi bi-whatsapp"></i></a> <!-- Replace with your WhatsApp number -->
+       
+        <a href="tel:+919826472886" class="call-button"><i class="bi bi-telephone-fill"></i></a> <!-- Phone icon -->
+       <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">
+      <i class="bi bi-arrow-up-circle-fill"></i>
+      </button>
+      <!-- Footer Start -->
+      <footer class="py-3 mt-auto">
+         <div class="container text-center">
+            <small>&copy; 2025 Speed Attestation. All rights reserved. |
+            <a href="privacy-policy.html">Privacy & Policy</a>
+            </small>
+         </div>
+      </footer>
+      <!-- Footer End -->
+      <!-- Scroll to Top Button -->
+      
+      <!-- Swiper + Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Scroll Script -->
+      <script>
+         // Show button after scrolling 200px
+         window.onscroll = function () {
+           const btn = document.getElementById("scrollTopBtn");
+           if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+             btn.style.display = "block";
+           } else {
+             btn.style.display = "none";
+           }
+         };
          
-    }
-      
-      .document-section {
+         // Smooth scroll to top
+         function scrollToTop() {
+           window.scrollTo({ top: 0, behavior: 'smooth' });
+         }
+      </script>
+      <script>
+         const swiper = new Swiper(".mySwiper", {
+           slidesPerView: 1,
+           spaceBetween: 20,
+           loop: true,
+           grabCursor: true,
+           pagination: {
+             el: ".swiper-pagination",
+             clickable: true,
+           }
+         });
+      </script>
+      <!-- JavaScript -->
        
-      margin: 60px auto;
-    }
-      h2{
-         color: #4579ED; 
-      }
-
-    .document-section h2 {
-      font-weight: 600;
-      margin-bottom: 30px;
-      color: #4579ED;
-      text-align: center;
-    }
-
-    .document-list {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .document-list li {
-      font-size: 1rem;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      color: #333;
-    }
-
-    .document-list li i {
-      color: #25D366;
-      margin-right: 10px;
-      font-size: 1.1rem;
-    }
-
-    .document-image img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-
-    @media (max-width: 768px) {
-      .document-section .row > div {
-        margin-bottom: 30px;
-      }
-    }
-       .service-icon {
-      background-color:#4579ED;
-      color: white;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      font-size: 24px;
-      margin: 0 auto 15px;
-    }
-
-    .service-box {
-      background-color: #fff;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
-      height: 100%;
-      transition: 0.3s ease;
-    }
-
-    .service-box:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .section-title {
-      font-weight: 700;
-      color: #4579ED;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-    }
-       .step-card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
-      height: 100%;
-      transition: 0.3s;
-      background-color: #fff;
-    }
-    .step-card:hover {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .step-icon {
-      font-size: 48px;
-      color: #4a4a4a;
-      margin-bottom: 15px;
-    }
-    .btn-call {
-      background-color: #0056d2;
-      color: #fff;
-      padding: 12px 24px;
-      font-size: 16px;
-      border-radius: 6px;
-      border: none;
-    }
-    .btn-call:hover {
-      background-color: #0041a8;
-    }
-      .bg-full{
-          background-color:#0041a8;
-      }
-      .swiper {
-      width: 100%;
-      max-width:800px;
-      margin: auto;
-    }
-    .swiper-slide {
-      background: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    .review-user {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .user-icon {
-      width: 40px;
-      height: 40px;
-      background-color: purple;
-      color: white;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 40px;
-      font-weight: bold;
-    }
-    .review-stars {
-      color: #FFD700;
-      margin-top: 10px;
-    }
-    .swiper-pagination-bullet {
-      background: #888;
-      opacity: 1;
-    }
-    .swiper-pagination-bullet-active {
-      background: #000;
-    }
-      .accordion-button {
-      font-weight: bold;
-      font-size: 16px;
-      background-color: #e9efff;
-      color: #000;
-      position: relative;
-      padding-right: 3rem;
-    }
-
-    .accordion-button::after {
-      display: none;
-    }
-
-    .accordion-button::before {
-      content: '+';
-      position: absolute;
-      right: 1.5rem;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 24px;
-      color: #4579ED;
-      transition: 0.3s ease;
-    }
-
-    .accordion-button:not(.collapsed)::before {
-      content: '−';
-      font-size: 28px;
-    }
-
-    .accordion-item {
-      border: 1px solid #d0dfff;
-      border-radius: 8px;
-      margin-bottom: 10px;
-      overflow: hidden;
-    }
-
-    .accordion-body {
-      background-color: #ffffff;
-      color: #333;
-      font-size: 15px;
-    }
-      .top-bar {
-      background-color:#4579ED; /* Blue background */
-      color: white;
-      padding: 8px 0;
-    }
-    .logo-box {
-      border: 2px solid white;
-      padding: 4px 12px;
-      font-weight: bold;
-      font-size: 20px;
-      border-radius: 5px;
-      display: inline-block;
-    }
-    .phone-icon {
-      margin-right: 8px;
-    }
-    @media (max-width: 576px) {
-      .top-bar .d-flex {
-        flex-direction: column;
-        align-items: center;
-          
-      }
-    }
-      .service-card {
-      transition: all 0.3s ease;
-    }
-
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 15px rgba(69, 121, 237, 0.2);
-    }
-
-    .service-icon {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-      
-      footer {
-      background-color:#4579ED;
-    }
-
-    footer a {
-      color: #adb5bd;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: #ffffff;
-      text-decoration: underline;
-    }
-      #scrollTopBtn {
-      position: fixed;
-      bottom:80px;
-      right: 40px;
-      background-color: #4579ED;
-      color: white;
-      border: none;
-      padding: 12px 16px;
-      border-radius:50%;
-      font-size: 20px;
-      cursor: pointer;
-      z-index: 999;
-      display: none;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      transition: all 0.3s ease;
-    }
-
-    #scrollTopBtn:hover {
-      background-color: #2f5cd1;
-    }
-      
-      .thumb-img {
-      max-width: 300px;
-      cursor: pointer;
-      border: 2px solid #ddd;
-      border-radius: 8px;
-      transition: 0.3s ease;
-      display: block;
-      margin: 50px auto;
-    }
-
-    .thumb-img:hover {
-      opacity: 0.8;
-    }
-
-    #imgPopup {
-      display: none;
-      position: fixed;
-      z-index: 9999;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.9);
-      animation: fadeIn 0.4s ease;
-    }
-
-    #imgPopup.active {
-      display: block;
-    }
-
-    #imgPopup img {
-      display: block;
-      margin: 60px auto;
-      max-width: 90%;
-      max-height: 80%;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-      animation: zoomIn 0.4s ease;
-    }
-
-    .close {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      color: #fff;
-      font-size: 35px;
-      font-weight: bold;
-      cursor: pointer;
-      z-index: 10000;
-    }
-
-    .close:hover {
-      color: #f00;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
-
-    @keyframes zoomIn {
-      from {
-        transform: scale(0.85);
-        opacity: 0;
-      }
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-      
-      
-      
-  </style>
-    
-    
-</head>
-<body>
-<div class="container-fluid top-bar">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="logo-box text-white">LEGAL</div>
-        <div class="text-white fw-bold" style="margin-top:10px;">
-          <i class="bi bi-telephone-outbound"></i>
- +91 9826472886
-        </div>
-      </div>
-    </div>
-  </div>
- 
-
-<!-- Hero Section -->
-<section class="hero-section">
-  <div class="container hero-content">
-    <div class="row align-items-center" >
-      
-      <!-- Left Column -->
-      <div class="col-md-6 mb-4 mb-md-0">
-        <h1 class="display-5 fw-bold">
-          <span>Document Apostille?</span><br />
-          <span>Only 3 Days</span>
-        </h1>
-
-        <ul class="features mt-4">
-          <li><i class="bi bi-patch-check-fill"></i>Instant Document Support</li>
-          <li><i class="bi bi-clock-fill"></i>On Time Delivery</li>
-          <li><i class="bi bi-cash-coin"></i>Affordable Pricing</li>
-          <li><i class="bi bi-shield-lock-fill"></i>24x7 Chat Available</li>
-        </ul>
-            <div class="container text-center">
-  <div class="button-group">
-    
-    <!-- Call Now Button -->
-    <a href="tel:+919826472886" class="custom-btn btn-call">
-      <i class="fas fa-phone"></i> Call Now
-    </a>
-
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/919826472886" target="_blank" class="custom-btn btn-whatsapp">
-      <i class="fab fa-whatsapp"></i> WhatsApp
-    </a>
-
-  </div>
-</div>
-         
-      </div>
-
-      <!-- Right Column (Image) -->
-      <div class="col-md-6 hero-img text-center">
-        <img src="apostille-g.png" class="img-fluid" alt="Apostille Service">
-      </div>
-
-    </div>
-  </div>
-</section>
-    
-    <section class="apostille-section">
-  <h2 class="h2">Apostille Services You Can Trust !</h2>
-  <p>
-     Whether you're planning to study, work, or settle abroad — your documents need to be apostilled. That's where we come in. 
-  We handle the entire process for you — from <strong>Notary to SDM to MEA Apostille</strong> — so you don't have to worry about a thing. 
-  It’s fast, reliable, and completely hassle-free. Just hand over your documents, and let us do the rest.
-  </p>
-</section>
- 
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center section-title mb-5">Quick and Trusted Apostille Service</h2>
-
-      <div class="row g-4 text-center">
-        <!-- Service 1 -->
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-icon">
-              <i class="fas fa-file-alt"></i>
-            </div>
-            <h5 class="fw-bold">Apostille Services For 100+ Countries</h5>
-            <p class="text-muted">We do apostille on all type of documents for 100+ countries like UAE, Bangladesh, USA, Ireland, Cyprus, Spain, Finland etc.</p>
-          </div>
-        </div>
-
-        <!-- Service 2 -->
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-icon">
-              <i class="fas fa-file-alt"></i>
-            </div>
-            <h5 class="fw-bold">Document Apostille Only At Rs. 1500/-*</h5>
-            <p class="text-muted">Get your apostilled documents only at Rs.1500/-* This is the lowest price for apostille services in market.</p>
-          </div>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="col-md-4">
-          <div class="service-box">
-            <div class="service-icon">
-              <i class="fas fa-file-alt"></i>
-            </div>
-            <h5 class="fw-bold">Fast Delivery in 3-4 Days*</h5>
-            <p class="text-muted">After submitting the documents we do apostille in 3-4 days* only. You can collect from our office or we can courier to you too.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-    
-<!-- Document Section -->
-<section class="document-section container">
-  <h2>List Of Documents For Attestation & Apostille Services</h2>
-  <div class="row align-items-start">
-
-    <!-- Column 1: Image -->
-    <div class="col-md-4 document-image text-center">
-      <img src="img-list.jpg" class="img-fluid" alt="Documents Image">
-    </div>
-
-    <!-- Column 2: List 1 -->
-    <div class="col-md-4">
-      <ul class="document-list">
-        <li><i class="fas fa-check-circle"></i> Birth Certificate</li>
-        <li><i class="fas fa-check-circle"></i> Marriage Certificate</li>
-        <li><i class="fas fa-check-circle"></i> Degree Certificate</li>
-        <li><i class="fas fa-check-circle"></i> Power of Attorney</li>
-        <li><i class="fas fa-check-circle"></i> Affidavit & Declarations</li>
-        <li><i class="fas fa-check-circle"></i> Police Clearance Certificate</li>
-        <li><i class="fas fa-check-circle"></i> Commercial Documents</li>
-      </ul>
-    </div>
-
-    <!-- Column 3: List 2 -->
-    <div class="col-md-4">
-      <ul class="document-list">
-        <li><i class="fas fa-check-circle"></i> National ID Cards</li>
-        <li><i class="fas fa-check-circle"></i> Bonafide Certificate</li>
-        <li><i class="fas fa-check-circle"></i> Unmarried Certificates</li>
-        <li><i class="fas fa-check-circle"></i> Power of Attorney</li>
-        <li><i class="fas fa-check-circle"></i> Passport Copy</li>
-        <li><i class="fas fa-check-circle"></i> Mark Sheets</li>
-        <li><i class="fas fa-check-circle"></i> School Transfer Certificate</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-    
-    
-<!-- Clickable Thumbnail -->
-<img src="apostille-g.png" alt="Click to enlarge" class="thumb-img" onclick="openImage(this.src)">
-
-<!-- Fullscreen Popup -->
-<div id="imgPopup" onclick="closeImage()">
-  <span class="close" onclick="closeImage()">&times;</span>
-  <img id="popupImg" src="" alt="Popup Image">
-</div>
-
-
-    <div class="container-fluid mt-5 bg-full">
-    
-    <div class="container py-5">
-    <h3 class="text-center fw-bold mb-4" style="color:#ffff;">ALL DONE WITH 3 EASY STEPS</h3>
-    <hr class="mx-auto mb-5" style="width: 120px; height: 2px; background-color: #333; opacity: 1;">
-
-    <div class="row g-4">
-      <!-- Step 1 -->
-      <div class="col-md-4">
-        <div class="step-card text-center h-100">
-          <div class="step-icon">
-           <img class="img-fluid" src="notary.png" width="150px;">
-          </div>
-          <h5 class="fw-bold mb-2">1 Step Notary Attestation</h5>
-          <p class="text-muted">
-            Your document is first verified and stamped by a registered notary to confirm its authenticity.
-
-
-          </p>
-        </div>
-      </div>
-
-      <!-- Step 2 -->
-      <div class="col-md-4">
-        <div class="step-card text-center h-100">
-          <div class="step-icon">
-           <img class="img-fluid" src="goverment.png" width="150px;">
-          </div>
-          <h5 class="fw-bold mb-2">2 Step SDM Attestation</h5>
-          <p class="text-muted">
-Next, the Sub-Divisional Magistrate (SDM) attests the notary-verified document. This is a mandatory step before apostille.          </p>
-        </div>
-      </div>
-
-      <!-- Step 3 -->
-      <div class="col-md-4">
-        <div class="step-card text-center h-100">
-          <div class="step-icon">
-            <img class="img-fluid" src="apostilleicon.png" width="150px;">
-          </div>
-          <h5 class="fw-bold mb-2">3 Step Apostille from MEA</h5>
-          <p class="text-muted">
-            Finally, the Ministry of External Affairs (MEA) issues the Apostille sticker, making your document valid for use in Hague Convention countries.
-
-
-          </p>
-        </div>
-      </div>
-    </div>
- 
-  </div>
-    
-    </div>
-    <section class="container mt-5">
-  <div class="row justify-content-center text-center">
-    <div class="col-md-8">
-      <h2 class="mb-4 fw-bold">Now You Can Relax – We’ll Handle Everything!</h2>
-      <p class="fs-5 text-muted">
-        No more long queues, confusing paperwork, or follow-ups. From Notary to SDM to Apostille – we manage the entire process for you with care and professionalism.
-        <br><br>
-        Just hand over your documents and sit back. We ensure timely, secure, and hassle-free service — so you don’t have to worry about a thing.
-      </p>
-      <div class="mt-4">
-        <a href="https://wa.me/919826472886" class="btn btn-success btn-lg">
-            <i class="fab fa-whatsapp"></i> Get Started on WhatsApp
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-    <div class="container mt-5 py-4 text-center">
-    <h2 class="fw-bold">EXCELLENT</h2>
-    <div class="text-warning fs-4 mb-2">★★★★★</div>
-    <p>Based on <strong>16 reviews</strong></p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" width="200" alt="Google Logo">
-  </div>
-
-  <div class="container mb-5">
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-
-        <!-- Review Slide 1 -->
-        <div class="swiper-slide">
-          <div class="d-flex justify-content-between align-items-start">
-            <div class="review-user">
-              <div class="user-icon">M</div>
-              <div>
-                <strong>Mudsar</strong><br>
-                <small>2025-04-08</small>
-              </div>
-            </div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" width="20">
-          </div>
-          <div class="review-stars">★★★★★ ✅</div>
-          <p class="mt-2">Good Google ads service for lead generation business.</p>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="swiper-slide">
-          <div class="d-flex justify-content-between align-items-start">
-            <div class="review-user">
-              <div class="user-icon">A</div>
-              <div>
-                <strong>Aliya</strong><br>
-                <small>2025-04-05</small>
-              </div>
-            </div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" width="20">
-          </div>
-          <div class="review-stars">★★★★★ ✅</div>
-          <p class="mt-2">Excellent results with low CPC. Highly recommended!</p>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="swiper-slide">
-          <div class="d-flex justify-content-between align-items-start">
-            <div class="review-user">
-              <div class="user-icon">Z</div>
-              <div>
-                <strong>Zara</strong><br>
-                <small>2025-04-01</small>
-              </div>
-            </div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" width="20">
-          </div>
-          <div class="review-stars">★★★★★ ✅</div>
-          <p class="mt-2">Very helpful team. Got more leads than expected.</p>
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="swiper-slide">
-          <div class="d-flex justify-content-between align-items-start">
-            <div class="review-user">
-              <div class="user-icon">S</div>
-              <div>
-                <strong>Sameer</strong><br>
-                <small>2025-03-28</small>
-              </div>
-            </div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" width="20">
-          </div>
-          <div class="review-stars">★★★★★ ✅</div>
-          <p class="mt-2">Google Ads campaign was perfect. Got 10x ROI!</p>
-        </div>
-
-        <!-- Slide 5 -->
-        <div class="swiper-slide">
-          <div class="d-flex justify-content-between align-items-start">
-            <div class="review-user">
-              <div class="user-icon">R</div>
-              <div>
-                <strong>Rohit</strong><br>
-                <small>2025-03-25</small>
-              </div>
-            </div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" width="20">
-          </div>
-          <div class="review-stars">★★★★★ ✅</div>
-          <p class="mt-2">Affordable service and great results. Thank you!</p>
-        </div>
-
-        <!-- Slide 6 -->
-        <div class="swiper-slide">
-          <div class="d-flex justify-content-between align-items-start">
-            <div class="review-user">
-              <div class="user-icon">H</div>
-              <div>
-                <strong>Hina</strong><br>
-                <small>2025-03-20</small>
-              </div>
-            </div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" width="20">
-          </div>
-          <div class="review-stars">★★★★★ ✅</div>
-          <p class="mt-2">Very professional Google Ads team. Quick response!</p>
-        </div>
-
-      </div>
-
-      <!-- Pagination -->
-      <div class="swiper-pagination mt-5"></div>
-    </div>
-  </div>
-    
-<section class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center text-primary fw-bold mb-4">Our Services & Assistances</h2>
-    <div class="row g-4 text-center">
-
-      <!-- MEA Attestation & Apostille -->
-      <div class="col-md-4">
-        <div class="p-4 bg-white shadow rounded service-card h-100">
-          <i class="bi bi-patch-check-fill service-icon"></i>
-          <h5 class="fw-semibold">MEA Attestation & Apostille</h5>
-        </div>
-      </div>
-
-      <!-- Embassy Attestation -->
-      <div class="col-md-4">
-        <div class="p-4 bg-white shadow rounded service-card h-100">
-          <i class="bi bi-building service-icon"></i>
-          <h5 class="fw-semibold">Embassy Attestation</h5>
-        </div>
-      </div>
-
-      <!-- HRD Attestation -->
-      <div class="col-md-4">
-        <div class="p-4 bg-white shadow rounded service-card h-100">
-          <i class="bi bi-person-badge-fill service-icon"></i>
-          <h5 class="fw-semibold">HRD Attestation</h5>
-        </div>
-      </div>
-
-      <!-- Translation -->
-      <div class="col-md-4">
-        <div class="p-4 bg-white shadow rounded service-card h-100">
-          <i class="bi bi-translate service-icon"></i>
-          <h5 class="fw-semibold">Translation</h5>
-        </div>
-      </div>
-
-      <!-- Visa Assistance -->
-      <div class="col-md-4">
-        <div class="p-4 bg-white shadow rounded service-card h-100">
-          <i class="bi bi-airplane-engines service-icon"></i>
-          <h5 class="fw-semibold">Visa Assistance</h5>
-        </div>
-      </div>
-
-      <!-- Flight Ticket -->
-      <div class="col-md-4">
-        <div class="p-4 bg-white shadow rounded service-card h-100">
-          <i class="bi bi-ticket-perforated service-icon"></i>
-          <h5 class="fw-semibold">Flight Ticket</h5>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<div class="container py-5">
-  <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-  <div class="accordion" id="faqAccordion">
-      
-
-    <!-- Q0 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="q2">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="a2">
-          What is an Apostille?
-
-        </button>
-      </h2>
-      <div id="a2" class="accordion-collapse collapse" aria-labelledby="q2" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-           An apostille is an official certificate that verifies the authenticity of a public document for use in foreign countries. Issued under the Hague Convention of 1961, it removes the need for embassy attestation. In India, the Ministry of External Affairs (MEA) provides apostille services for documents like birth, marriage, education, or power of attorney. It confirms the seal and signature, making the document valid abroad for immigration, education, work, or legal use.
-        </div>
-      </div>
-    </div>
-      
-
-    <!-- Q2 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="q3">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false" aria-controls="a3">
-          Which documents can be apostilled?
-        </button>
-      </h2>
-      <div id="a3" class="accordion-collapse collapse" aria-labelledby="q3" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          Educational certificates, birth & marriage certificates, power of attorney, police clearance, and more can be apostilled.
-        </div>
-      </div>
-    </div>
-
-    <!-- Q3 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="q4">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4" aria-expanded="false" aria-controls="a4">
-          Is notary and SDM attestation required before apostille?
-        </button>
-      </h2>
-      <div id="a4" class="accordion-collapse collapse" aria-labelledby="q4" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          Yes, your document is first notarized and then attested by SDM before it is submitted for apostille.
-        </div>
-      </div>
-    </div>
-
-    <!-- Q4 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="q5">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a5" aria-expanded="false" aria-controls="a5">
-          Do you offer document pickup and delivery?
-        </button>
-      </h2>
-      <div id="a5" class="accordion-collapse collapse" aria-labelledby="q5" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          Yes, we offer safe document pickup and doorstep delivery through trusted courier partners like Blue Dart and DTDC.
-        </div>
-      </div>
-    </div>
-
-    <!-- Q5 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="q6">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a6" aria-expanded="false" aria-controls="a6">
-          Is apostille accepted in all countries?
-        </button>
-      </h2>
-      <div id="a6" class="accordion-collapse collapse" aria-labelledby="q6" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          Apostille is valid only in countries that are members of the Hague Convention. For other countries, embassy attestation is required.
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-    
-    
-  <!-- Footer Start -->
-  <footer class="py-3 mt-auto">
-    <div class="container text-center">
-      <small>&copy; 2025 Speed Attestation. All rights reserved. |
-        <a href="privacy-policy.html">Privacy & Policy</a>
-      </small>
-    </div>
-  </footer>
-  <!-- Footer End -->
-    <!-- Scroll to Top Button -->
-<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">
- <i class="bi bi-arrow-up-circle-fill"></i>
-
-</button>
-
- 
- 
-
-    <!-- Swiper + Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Scroll Script -->
-<script>
-  // Show button after scrolling 200px
-  window.onscroll = function () {
-    const btn = document.getElementById("scrollTopBtn");
-    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
-  };
-
-  // Smooth scroll to top
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-</script>
-  <script>
-    const swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true,
-      grabCursor: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      }
-    });
-  </script>
-    <!-- JavaScript -->
-<script>
-  function openImage(src) {
-    const popup = document.getElementById("imgPopup");
-    const img = document.getElementById("popupImg");
-    img.src = src;
-    popup.classList.add("active");
-  }
-
-  function closeImage() {
-    const popup = document.getElementById("imgPopup");
-    popup.classList.remove("active");
-  }
-</script>
-</body>
+   </body>
 </html>
